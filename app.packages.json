@@ -1,0 +1,24 @@
+[{
+    "id": 2,
+    "sprint": 2,
+    "version": "0.0.2",
+    "buildNumber": "002",
+    "date": "Mar 26, 2018",
+    "android": true,
+    "ios": true,
+    "description": [
+      "- Update **Android** version",
+      "- Fix bugs"
+    ]
+  },
+  {
+    "id": 1,
+    "sprint": 1,
+    "version": "0.0.1",
+    "buildNumber": "001",
+    "date": "Mar 19, 2018",
+    "android": false,
+    "ios": true,
+    "description": "Release first version, <strong>only for iOS platform</strong>"
+  }
+]
