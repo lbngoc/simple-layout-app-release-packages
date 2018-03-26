@@ -2,6 +2,9 @@
 
 > A simple project, built with Vue.js and Semantic UI
 
+
+[View Demo](https://lbngoc.github.io/simple-layout-app-release-packages/)
+
 ## Build Setup
 
 ``` bash
