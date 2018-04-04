@@ -18,13 +18,19 @@ export default {
     }
   },
   created() {
-    fetch('app.packages.json')
-    .then(r => r.json())
-    .then(releases => {
-      if (typeof releases === 'object') {
-        this.releases = releases;
-      }
-    })
+    let appSettings = window.SETTINGS || {};
+    let appDataPath = appSettings.appData || 'app.packages.json';
+    appDataPath += '?v=' + new Date().getTime(); // Force no-cache
+    this.$http.get(appDataPath)
+      .then(resp => {
+        if (resp.status == 200) {
+          this.releases = resp.body;
+        } else {
+          console.log('Get jsondata error', resp);
+        }
+      }, resp => {
+        console.log('Get jsondata error', resp);
+      });
   }
 }
 </script>

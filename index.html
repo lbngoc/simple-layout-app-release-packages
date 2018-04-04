@@ -14,6 +14,7 @@
   window.SETTINGS = {
     appName: 'MyFirstApp', // default: app, required for generate binary installation path
     binDir: 'packages', // default: packages, required for generate binary installation path
+    // appData: 'app.packages.json', // default: app.packages.json, required for read data and render
     // getReleaseTitle: function(item) {
     //   return 'Sprint #' + item.sprint;
     // },
@@ -29,26 +30,24 @@
     body {
       background-color: #FFFFFF;
     }
-
     .ui.menu .item img.logo {
       margin-right: 1.5em;
     }
-
     .main.container {
       margin-top: 6em;
     }
-
     .ui.header {
       margin-bottom: 1em;
     }
-
     .wireframe {
       margin-top: 2em;
     }
-
     .ui.footer.segment {
       margin: 5em 0em 0em;
       padding: 5em 0em;
+    }
+    .ui.footer .copyright a {
+      color: #ffffff;
     }
   </style>
 </head>
@@ -76,7 +75,7 @@
         <a class="item" href="#">Terms and Conditions</a>
         <a class="item" href="#">Privacy Policy</a>
       </div>
-      <p>Copyright &copy; 2018 My Company Corp. All Rights Reserved.</p>
+      <p class="copyright">Made with <a href="https://vuejs.org/">Vue.js</a> and <a href="https://semantic-ui.com/">Semantic UI</a> at <a href="https://ngoclb.com">somewhere in Saigon</a>.</p>
     </div>
   </div>
   <script src="dist/build.js"></script>

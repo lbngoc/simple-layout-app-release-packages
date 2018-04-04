@@ -1,9 +1,16 @@
 # Simple Layout For Mobile Release Page
 
-> A simple project, built with Vue.js and Semantic UI
+A simple project, built with Vue.js and Semantic UI
 
+![Screenshot](app_releases_layout.png)
 
-[View Demo](https://lbngoc.github.io/simple-layout-app-release-packages/)
+## Support
+
+![Chrome](https://raw.github.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/src/opera/opera_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/src/safari/safari_48x48.png)
+--- | --- | --- | --- | --- |
+Latest ✔ | Latest ✔ | 9+ ✔ | Latest ✔ | 8.0+ ✔ |
+
+[**View Demo**](https://lbngoc.github.io/simple-layout-app-release-packages/)
 
 ## Build Setup
 
@@ -30,6 +37,7 @@ To override default settings, open `index.html` and change `window.SETTINGS` if 
 window.SETTINGS = {
   appName: 'MyFirstApp', // default: app, required for generate binary installation path
   binDir: 'packages', // default: packages, required for generate binary installation path
+  // appData: 'app.packages.json', // default: app.packages.json, required for read data and render
   // getReleaseTitle: function(item) {
   //   return 'Sprint #' + item.sprint;
   // },
@@ -67,4 +75,4 @@ Sample `app.packages.json`:
 
 MIT License
 
-Create by [Ngoc L.](https://ngoclb.com) | contact@ngoclb.com
+Created by [Ngoc L.](https://ngoclb.com) | contact@ngoclb.com
